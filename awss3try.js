@@ -1,3 +1,4 @@
+require('dotenv').config();
 var s3 = require('s3');
 
 var client = s3.createClient({
@@ -117,7 +118,7 @@ var getUrl=function(mbucket,key,bucketlocation){
   console.log(s3.getPublicUrl(mbucket,key,bucketlocation));
 };
 
-fileupload('machersamples','google200.png');
+fileupload('machersamples','cam_config.png');
 //filedownload('machersamples','spatt.png');
 //syncdDir(__dirname+'/log','log');
 //listDir('log/');
